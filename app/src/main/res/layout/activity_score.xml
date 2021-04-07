@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".score"
+    android:background="@drawable/mathsbg">
+
+    <TextView
+        android:id="@+id/mathsgame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Maths Game"
+        android:fontFamily="casual"
+        android:textSize="40sp"
+        android:layout_above="@+id/txtscore"
+        android:layout_centerHorizontal="true"
+        />
+
+
+
+    <TextView
+        android:id="@+id/txtscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="35sp"
+        android:fontFamily="casual"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        />
+
+    <ImageButton
+        android:id="@+id/scoreshare"
+        android:backgroundTint="@color/colorAccent"
+        android:layout_below="@+id/txtscore"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_share_white_48"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".startpage"
+    android:background="@drawable/mathsbg"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Math Game"
+        android:layout_centerInParent="true"
+        android:textSize="50sp"
+        android:fontFamily="casual"
+        android:id="@+id/mathgame"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_below="@+id/mathgame"
+        android:gravity="center"
+        >
+
+
+
+        <ImageButton
+            android:id="@+id/sharebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_share_white_48"
+            android:padding="5dp"
+            android:layout_margin="2dp"
+            android:backgroundTint="@color/colorAccent"
+            />
+
+        <ImageButton
+            android:id="@+id/playbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_play_arrow_white_48"
+            android:padding="5dp"
+            android:layout_margin="2dp"
+            android:backgroundTint="@color/colorAccent"
+            />
+
+
+        <ImageButton
+            android:id="@+id/starbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_star_outline_white_48"
+            android:padding="5dp"
+            android:layout_margin="2dp"
+            android:backgroundTint="@color/colorAccent"
+            />
+    </LinearLayout>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="AZSOFT@CORPORATION"
+    android:layout_alignParentBottom="true"
+    android:padding="5dp"
+    android:layout_centerHorizontal="true"/>
+</RelativeLayout>

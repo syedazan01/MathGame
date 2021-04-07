@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/mathsbg"
+    >
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        >
+        <TextView
+            android:id="@+id/time"
+            android:fontFamily="casual"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="24sp"
+            android:layout_weight="50"
+            />
+
+        <TextView
+            android:id="@+id/txtscore"
+            android:layout_width="0dp"
+            android:fontFamily="casual"
+            android:layout_height="match_parent"
+            android:textSize="24sp"
+            android:layout_weight="50"
+            android:gravity="right"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <ImageButton
+            android:id="@+id/rightclick"
+            android:layout_width="0dp"
+            android:backgroundTint="@color/colorAccent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_done_white_48"
+            android:layout_weight="1"
+            />
+
+        <ImageButton
+            android:id="@+id/wrongclick"
+            android:backgroundTint="@color/colorAccent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_clear_white_48"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20+2"
+        android:textSize="60sp"
+        android:layout_centerInParent="true"
+        android:id="@+id/txtQuestion"
+        />
+    <TextView
+        android:id="@+id/txtresult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="=69"
+        android:textSize="60sp"
+        android:layout_below="@+id/txtQuestion"
+        android:layout_centerInParent="true"
+
+        />
+
+
+</RelativeLayout>
